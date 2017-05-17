@@ -1,0 +1,10 @@
+Welcome
+
+Fill in a zipcode
+
+<%= form_for @search do |f| %>
+  <%= f.label :zipcode %>:
+  <%= f.text_field :zipcode %><br />
+
+  <%= f.submit %>
+<% end %>

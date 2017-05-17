@@ -6,9 +6,9 @@ describe "A user can search for nearby electric and propane gas stations" do
 
     visit root_path
 
-    fill_in  #zipcode with 80203
-
-    click_on "Locate"
+    # fill_in  #zipcode with 80203
+    fill_in('Zipcode', :with => 80203)
+    click('Locate')
 
     expect(current_path).to eq("/search/80203")
     expect(page).to have_content("The 10 closest stations within six miles are:")
@@ -16,7 +16,7 @@ describe "A user can search for nearby electric and propane gas stations" do
     # expect(page).to have_content("stations.first.address")
     # expect(page).to have_content("stations.first.fuel_types")
     # expect(page).to have_content("stations.first.distance")
-    # expect(page).to have_content("stations.first.access_times") 
+    # expect(page).to have_content("stations.first.access_times")
   end
 end
 
