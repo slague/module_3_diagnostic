@@ -2,8 +2,11 @@
 Closest 10 stations within 6 miles:
 
 <% @ten_stations.each do |station| %>
-<h2><% station[:station_name] %></h2>
-<p><% station[:street_address] %></p>
-<p><% station[:fuel_type_code] %></p>
-<p><% station[:access_days_time] %></p>
-<% end  %><br>
+  <h2><% station[:station_name] %></h2>
+  <p><% station[:street_address] %></p>
+  <p><% station[:fuel_type_code] %></p>
+  <p><% station[:access_days_time] %></p>
+  <% end  %><br>
+
+
+<!-- #what will distance be? -->

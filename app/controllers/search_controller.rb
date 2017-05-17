@@ -9,4 +9,6 @@ class SearchController < ApplicationController
 
     @ten_stations = stations[1..10] #gives me the first 10
   end
+
+  
 end

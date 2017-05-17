@@ -6,13 +6,5 @@ Fill in a zipcode
   <%= f.label :zipcode %>:
   <%= f.text_field :zipcode %><br />
 
-  <%= f.submit %>
+  <%= f.submit "Locate"%>
 <% end %>
-
-<!-- this form needs to create a new "search", the important piece being the zipcode,
- the form saves the zip value and uses it/inserts it in the api call
-to create a new search, I need some kind of  "create" method
-would this happen in a new search controller-->
-
-
-<!--  do I need a 'form'? can I just get user input to supply the zipcode value for the api call...-->
