@@ -1,4 +1,5 @@
-class WelcomeController < ApplicationController
+class SearchController < ApplicationController
+
   def index
     key = ENV['NREL_API_KEY']
     zipcode = 80203  #hardcoded for the time being...
