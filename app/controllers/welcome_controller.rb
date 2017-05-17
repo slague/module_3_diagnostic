@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @search = Search.build_search
+    key = ENV['NREL_API_KEY']
+    @search = Search.add_zipcode(key)
   end
 end
